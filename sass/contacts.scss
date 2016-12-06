@@ -1,0 +1,148 @@
+.contacts {
+  margin-top: 10px;
+}
+
+.contacts__info {
+  @include container;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacts__title {
+  font-family: $light-font;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.contacts__tel-number {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__tel-number a {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: $light-font;
+  color: $secondary-color;
+  font-weight: normal;
+}
+
+.contacts__email {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__email a {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: $light-font;
+  color: $secondary-color;
+  font-weight: normal;
+}
+
+.contacts__address {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__address-link {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: $light-font;
+  color: $secondary-color;
+  font-weight: normal;
+}
+
+.contacts__map {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: url("../img-optimized/bg-map-mobile.png") no-repeat;
+  background-size: 100%, auto;
+  background-position: 0 90%;
+  clip-path: polygon(0% 0%, 50% 15%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+@include tablet {
+  .contacts__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    flex-basis: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__email {
+    flex-basis: 50%;
+  }
+
+  .contacts__tel-number {
+    flex-basis: 50%;
+  }
+
+  .contacts__address {
+    flex-grow: 1;
+  }
+
+  .contacts__map {
+    height: 380px;
+    background: url("../img-optimized/bg-map-tablet.png") no-repeat;
+    clip-path: polygon(0% 0%, 50% 20%, 100% 0%, 100% 100%, 0% 100%);
+    background-size: 100%, auto;
+    background-position: 0 70%;
+  }
+}
+
+@include desktop {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__email {
+    flex-basis: 33%;
+    order: 3;
+  }
+
+  .contacts__tel-number {
+    flex-basis: 34%;
+    order: 1;
+  }
+
+  .contacts__address {
+    order: 2;
+  }
+
+  .contacts__info a,
+  .contacts__address-link {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .contacts__map {
+    height: 505px;
+    background: url("../img-optimized/bg-map-desktop.png") no-repeat;
+    clip-path: polygon(0% 0%, 50% 20%, 100% 0%, 100% 100%, 0% 100%);
+    background-size: 100%, auto;
+    background-position: 0 55%;
+  }
+}
+
+
+
+
+
+

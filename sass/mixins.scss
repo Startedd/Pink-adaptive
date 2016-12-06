@@ -1,0 +1,32 @@
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 89%;
+    max-width: 940px;
+  }
+
+  @include desktop {
+    width: 78.5%;
+  }
+}
