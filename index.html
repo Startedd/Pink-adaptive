@@ -186,7 +186,7 @@
             <p class="contacts__email">Пишите: <br> <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             <p class="contacts__address">Приезжайте в гости: <br> <span class="contacts__address-link">ул. Большая <br> Конюшенная, 19/8</span></p>
         </div>
-        <div class="contacts__map map">
+        <div id="map" class="contacts__map map">
         </div>
 </section>
 
@@ -215,22 +215,7 @@
         </a></div>
     </div>
 </section>
-<script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-
-        if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-        } else {
-            navMain.classList.remove('main-nav--opened');
-            navMain.classList.add('main-nav--closed');
-        }
-    });
-</script>
+<script async defer src="js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSo-H6UFsSM4luMGvBaRRUbmEs1XxHHPI&callback=initMap"></script>
 </body>
 </html>
