@@ -15,7 +15,7 @@ navToggle.addEventListener('click', function () {
     }
 });
 
-function initMap() {
+(function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 59.936253, lng: 30.320740},
         zoom: 16
@@ -28,5 +28,6 @@ function initMap() {
         title: 'Hello World!',
         icon: image
     });
-}
+})();
+
 
