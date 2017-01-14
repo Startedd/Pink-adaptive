@@ -132,6 +132,15 @@
   display: none;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .main-nav--nojs .main-nav__item {
   display: block;
 }
@@ -188,6 +197,12 @@
   .main-nav__logo svg {
     position: static;
     margin: 30px 0 43px 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav__item {
+    animation: bounce 0.2s;
   }
 }
 

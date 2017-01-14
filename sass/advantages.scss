@@ -130,6 +130,10 @@
 
   .advantages__additional-item-link {
     color: $secondary-color;
+
+    &:hover {
+      color: grey;
+    }
   }
 }
 
