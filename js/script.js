@@ -1,6 +1,6 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
-var map;
+let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
+let map;
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -21,8 +21,8 @@ navToggle.addEventListener('click', function () {
         zoom: 16
     });
 
-    var image = 'img-optimized/icon-map-marker.svg';
-    var marker = new google.maps.Marker({
+    let image = 'img-optimized/icon-map-marker.svg';
+    let marker = new google.maps.Marker({
         position: {lat: 59.936253, lng: 30.320740},
         map: map,
         title: 'Hello World!',
